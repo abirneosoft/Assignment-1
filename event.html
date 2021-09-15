@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script>
+            function abc(){
+                var row=parseInt(prompt("Enter number"))
+                var p=row;
+                var s=0;
+                while(row!=0){
+                    var r=row%10;
+                    var s=s+r*r*r;
+                    var row=parseInt(row/10);
+                }
+                if(p==s){
+                    document.write("Armstrong")
+
+
+                }
+                else{
+                    document.write("not armstrong");
+                }
+                 
+                
+                
+            }
+
+        </script>
+        
+    </head>
+    <body>
+
+        <button onclick="abc()">click me</button>
+        
+    </body>
+</html>
